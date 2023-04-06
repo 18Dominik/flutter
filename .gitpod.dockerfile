@@ -1,5 +1,3 @@
-RUN brew tap dart-lang/dart && brew install dart
-
 FROM gitpod/workspace-full-vnc
 USER root
 
