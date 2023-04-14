@@ -8,7 +8,7 @@ USER gitpod
 
 # Flutter
 ENV FLUTTER_HOME="/home/gitpod/flutter"
-RUN git clone https://github.com/flutter/flutter $FLUTTER_HOME
+RUN git clone https://github.com/flutter/flutter.git -b stable $FLUTTER_HOME
 RUN $FLUTTER_HOME/bin/flutter channel stable
 RUN $FLUTTER_HOME/bin/flutter upgrade
 RUN $FLUTTER_HOME/bin/flutter precache
