@@ -1,3 +1,11 @@
+FROM gitpod/workspace-full:latest
+
+USER root
+
+RUN apt-get update -y
+RUN apt-get install -y gcc make build-essential wget curl unzip apt-utils xz-utils libkrb5-dev gradle libpulse0 
+
+USER gitpod
 # Flutter
 ENV FLUTTER_HOME="/home/gitpod/flutter"
 RUN git clone https://github.com/flutter/flutter $FLUTTER_HOME
