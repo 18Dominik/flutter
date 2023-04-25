@@ -7,7 +7,7 @@ You may refer to https://stackoverflow.com/questions/60304251/unable-to-open-x-d
  - RUN sudo apt-get -y install xorg xvfb gtk2-engines-pixbuf
  - RUN sudo apt-get -y install dbus-x11 xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic xfonts-scalable
  
- ## Set DISPLAY variable
+ ## Make sure that Xvfb starts every time the box/vm is booted and Set DISPLAY variable
  - RUN Xvfb -ac :99 -screen 0 1280x1024x16 &
        export DISPLAY=:99
  
