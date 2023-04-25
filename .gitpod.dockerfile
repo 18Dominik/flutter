@@ -15,6 +15,14 @@ RUN $FLUTTER_HOME/bin/flutter channel master
 RUN $FLUTTER_HOME/bin/flutter upgrade
 RUN $FLUTTER_HOME/bin/flutter precache
 RUN $FLUTTER_HOME/bin/flutter config --enable-web --no-analytics
+# Chrome
+RUN cd $HOME \
+ && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+ && sudo apt update \
+ && sudo apt install -y \
+     ./google-chrome-stable_current_amd64.deb \
+ && sudo rm -rf /var/lib/apt/lists/* \
+ && rm google-chrome-stable_current_amd64.deb
 
 
 
