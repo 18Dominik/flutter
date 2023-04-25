@@ -13,3 +13,7 @@ RUN $FLUTTER_HOME/bin/flutter channel master
 RUN $FLUTTER_HOME/bin/flutter upgrade
 RUN $FLUTTER_HOME/bin/flutter precache
 RUN $FLUTTER_HOME/bin/flutter config --enable-web --no-analytics
+ENV PUB_CACHE=/workspace/.pub_cache
+
+RUN echo 'export PATH=${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin:${PUB_CACHE}/bin:${FLUTTER_HOME}/.pub-cache/bin:$PATH' >>~/.bashrc
+
