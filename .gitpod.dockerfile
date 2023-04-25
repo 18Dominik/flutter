@@ -3,7 +3,7 @@ FROM gitpod/workspace-full:latest
 USER root
 
 RUN apt-get update -y
-RUN apt-get install -y gcc make build-essential wget curl unzip apt-utils xz-utils libkrb5-dev gradle libpulse0 
+RUN apt-get install -y gcc make build-essential wget curl unzip apt-utils xz-utils libkrb5-dev gradle libpulse0 chromium-browser
 
 USER gitpod
 # Flutter
