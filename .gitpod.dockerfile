@@ -27,7 +27,6 @@ RUN cd $HOME \
  ####Configure Chrome###
  #Start D-Bus: https://qiita.com/7mpy/items/1c9d662d972d00086197
  RUN sudo /etc/init.d/dbus start
- # https://stackoverflow.com/questions/60304251/unable-to-open-x-display-when-trying-to-run-google-chrome-on-centos-rhel-7-5
  # Update apt package manager
  RUN sudo apt update 
 
