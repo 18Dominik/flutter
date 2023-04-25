@@ -3,7 +3,8 @@ You may refer to https://stackoverflow.com/questions/60304251/unable-to-open-x-d
  ## Install Xvfb if you didn't install it yet and do the following steps
  - RUN sudo apt-get install -y xvfb
  
- ## Dependencies to make "headless" chrome/selenium work. Here, you will be asked to specify the keyboard setting upon running the command
+ ## Dependencies to make "headless" chrome/selenium work
+ Here, you will be asked to specify the keyboard setting upon running the command
  - RUN sudo apt-get -y install xorg xvfb gtk2-engines-pixbuf
  - RUN sudo apt-get -y install dbus-x11 xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic xfonts-scalable
  
