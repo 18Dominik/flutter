@@ -20,5 +20,5 @@ You may refer to https://stackoverflow.com/questions/60304251/unable-to-open-x-d
  ## Run flutter app in release mode
  You may refer to: https://stackoverflow.com/questions/59874808/finished-with-error-failed-to-establish-connection-with-the-application-instanc
  
- App runs on port 40811
+ Run Flutter App
  - `flutter run -d chrome --release`
