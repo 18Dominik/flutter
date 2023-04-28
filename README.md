@@ -1,6 +1,7 @@
 # Manual Commands for setting up flutter on gitpod
 You may refer to https://stackoverflow.com/questions/60304251/unable-to-open-x-display-when-trying-to-run-google-chrome-on-centos-rhel-7-5
  ## Install Xvfb if you didn't install it yet and do the following steps
+ https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml
  - `sudo apt-get install -y xvfb`
  
  ## Dependencies to make "headless" chrome/selenium work
