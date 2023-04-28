@@ -27,8 +27,7 @@ RUN cd $HOME \
  ####Configure Chrome###
  #Start D-Bus: https://qiita.com/7mpy/items/1c9d662d972d00086197
  RUN sudo /etc/init.d/dbus start
- # Update apt package manager
- RUN sudo apt update 
+
 
  
  
