@@ -1,5 +1,11 @@
-# Option 1: `flutter run -d web-server`
-# Option 2: Set up Flutter with Chrome
+# Start Flutter App: Option 1 with web-server: 
+ ### Create Flutter App
+ You may refer to https://docs.flutter.dev/development/platform-integration/web/building
+ - `flutter create my_app`
+ - `cd my_app`
+### Run Flutter App with web-server
+`flutter run -d web-server`
+# Start Flutter App: Option 2: Set up Flutter with Chrome
 ## Manual Commands for setting up flutter on gitpod
 You may refer to https://stackoverflow.com/questions/60304251/unable-to-open-x-display-when-trying-to-run-google-chrome-on-centos-rhel-7-5
  ## Install Xvfb if you didn't install it yet and do the following steps
@@ -19,7 +25,7 @@ You may refer to https://stackoverflow.com/questions/60304251/unable-to-open-x-d
  You may refer to https://docs.flutter.dev/development/platform-integration/web/building
  - `flutter create my_app`
  - `cd my_app`
- ### Run flutter app in release mode
+ ### Run flutter app with chrome in release mode
  You may refer to: https://stackoverflow.com/questions/59874808/finished-with-error-failed-to-establish-connection-with-the-application-instanc
  
  Run Flutter App
